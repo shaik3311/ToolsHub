@@ -1,0 +1,149 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #c850c0, #4158d0);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Back Button */
+.back-btn-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #fff;
+  color: #333;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+/* Container */
+#container {
+  width: 420px;
+  max-width: 90vw;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  color: white;
+}
+
+/* Headings */
+#heading {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+#Password-Difficulty-heading,
+#customize-heading,
+#length-label {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-top: 15px;
+}
+
+/* Level Buttons */
+#difficultie-level-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.level-btns {
+  font-size: 16px;
+  padding: 6px 12px;
+  width: 110px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(63, 63, 177);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.level-btns:hover {
+  background-color: rgb(91, 91, 168);
+}
+
+.level-btns:active {
+  scale: 0.95;
+}
+
+/* Checkboxes */
+label {
+  display: block;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+/* Slider */
+#length {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Output */
+#output-section {
+  display: flex;
+  margin: 20px 0 10px;
+  justify-content: center;
+}
+
+#password-output {
+  width: 100%;
+  background-color: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  word-break: break-all;
+}
+
+/* Generate Button */
+#generate-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#generate-btn:hover {
+  background-color: rgb(49, 144, 49);
+}
+
+#generate-btn:active {
+  transform: scale(0.95);
+}

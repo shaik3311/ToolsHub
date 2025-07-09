@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Password Generator | ToolsHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="back-btn-container">
+    <a href="../../index.html#tools" class="back-btn">← Back to ToolsHub</a>
+  </div>
+
+  <div id="container">
+    <h1 id="heading">Generate random password</h1>
+
+    <h2 id="Password-Difficulty-heading">Password Difficulty:</h2>
+    <div id="difficultie-level-section">
+      <button class="level-btns" id="easy-level-btn">Easy</button>
+      <button class="level-btns" id="medium-level-btn">Medium</button>
+      <button class="level-btns" id="hard-level-btn">Hard</button>
+    </div>
+
+    <h2 id="customize-heading">Customize ⚙️</h2>
+    <h2 id="length-label">Password length: 6</h2>
+    <input type="range" min="4" max="20" value="6" id="length"><br>
+
+    <label for="UpperCase-chars"><input type="checkbox" id="UpperCase-chars" class="checkboxes"> UpperCase</label><br>
+    <label for="LowerCase-chars"><input type="checkbox" id="LowerCase-chars" class="checkboxes"> LowerCase</label><br>
+    <label for="Numbers"><input type="checkbox" id="Numbers" class="checkboxes"> Numbers</label><br>
+    <label for="Symbols"><input type="checkbox" id="Symbols" class="checkboxes"> Symbols</label><br>
+
+    <div id="output-section">
+      <p id="password-output"></p>
+    </div>
+
+    <button id="generate-btn">✨ Generate</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

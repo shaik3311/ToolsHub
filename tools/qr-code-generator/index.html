@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="back-button">
+    <a href="../../index.html#tools">← Back to ToolsHub</a>
+  </div>
+
+  <div class="container">
+    <h1 class="title">QR Code Generator</h1>
+    <p class="subtitle">Enter text or URL to generate a QR code instantly.</p>
+    
+    <div class="form-group">
+      <input type="text" id="qrInput" placeholder="Enter text or URL..." />
+      <button id="generateBtn">Generate QR</button>
+    </div>
+
+    <div id="qrResult" class="qr-box">
+      <img id="qrImage" src="" alt="Your QR will appear here" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

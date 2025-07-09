@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolsHub - Your Ultimate Digital Toolkit</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/6f8b414664.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-icon">🛠️</span>
+          <span class="logo-text">ToolsHub</span>
+        </div>
+        <ul class="nav-menu" id="menuList">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tools" class="nav-link">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Welcome to <span class="highlight">ToolsHub</span>
+          </h1>
+          <p class="hero-description">
+            Your one-stop destination for powerful, easy-to-use web tools. Boost
+            your productivity with our collection of essential utilities.
+          </p>
+          <div class="hero-buttons">
+            <a href="#tools" class="btn btn-primary">Explore Tools</a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-graphic">
+            <div class="floating-icon">⚡</div>
+            <div class="floating-icon">🚀</div>
+            <div class="floating-icon">💡</div>
+            <div class="floating-icon">🔧</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+<section id="tools" class="tools-section">
+  <div class="container">
+    <h2 class="section-title">Our Tools</h2>
+    <p class="section-description">
+      Discover our collection of carefully crafted tools designed to make
+      your life easier
+    </p>
+
+    <div class="tools-grid">
+      <!-- Password Generator Tool -->
+      <div class="tool-card" data-tool="password-generator">
+        <div class="tool-icon">🔐</div>
+        <h3 class="tool-title">Password Generator</h3>
+        <p class="tool-description">
+          Generate secure, random passwords with customizable options
+          including length, character types, and strength indicators.
+        </p>
+        <div class="tool-features">
+          <span class="feature-tag">Secure</span>
+          <span class="feature-tag">Customizable</span>
+          <span class="feature-tag">Instant</span>
+        </div>
+        <div class="tool-actions">
+          <button
+            class="btn btn-primary"
+            onclick="openTool('random-password-generator')"
+          >
+            Open Tool
+          </button>
+          <button
+            class="btn btn-outline"
+            onclick="openTool('random-password-generator', true)"
+          >
+            New Tab
+          </button>
+        </div>
+      </div>
+
+      <!-- Calculator Tool -->
+      <div class="tool-card" data-tool="calculator">
+        <div class="tool-icon">🧮</div>
+        <h3 class="tool-title">Calculator</h3>
+        <p class="tool-description">
+          Perform basic arithmetic operations with our intuitive calculator
+          featuring a modern interface and keyboard support.
+        </p>
+        <div class="tool-features">
+          <span class="feature-tag">Fast</span>
+          <span class="feature-tag">Keyboard Support</span>
+          <span class="feature-tag">Modern UI</span>
+        </div>
+        <div class="tool-actions">
+          <button class="btn btn-primary" onclick="openTool('calculator')">
+            Open Tool
+          </button>
+          <button
+            class="btn btn-outline"
+            onclick="openTool('calculator', true)"
+          >
+            New Tab
+          </button>
+        </div>
+      </div>
+
+      <!-- Temperature Converter Tool -->
+      <div class="tool-card" data-tool="temperature-converter">
+        <div class="tool-icon">🌡️</div>
+        <h3 class="tool-title">Temperature Converter</h3>
+        <p class="tool-description">
+          Convert temperatures between Celsius and Fahrenheit with
+          precise calculations and real-time updates.
+        </p>
+        <div class="tool-features">
+          <span class="feature-tag">Accurate</span>
+          <span class="feature-tag">Real-time</span>
+          <span class="feature-tag">Multiple Units</span>
+        </div>
+        <div class="tool-actions">
+          <button
+            class="btn btn-primary"
+            onclick="openTool('temperature-converter')"
+          >
+            Open Tool
+          </button>
+          <button
+            class="btn btn-outline"
+            onclick="openTool('temperature-converter', true)"
+          >
+            New Tab
+          </button>
+        </div>
+      </div>
+
+      <!-- Word-counter Tool -->
+      <div class="tool-card" data-tool="word-counter">
+        <div class="tool-icon">🔢</div>
+        <h3 class="tool-title">Word Counter</h3>
+        <p class="tool-description">
+          Instantly count words, characters, sentences, and paragraphs in your text. Ideal for writers, students, and professionals.
+        </p>
+        <div class="tool-features">
+          <span class="feature-tag">Versatile</span>
+          <span class="feature-tag">Accurate</span>
+          <span class="feature-tag">Fast</span>
+        </div>
+        <div class="tool-actions">
+          <button class="btn btn-primary" onclick="openTool('word-counter')">
+            Open Tool
+          </button>
+          <button class="btn btn-outline" onclick="openTool('word-counter', true)">
+            New Tab
+          </button>
+        </div>
+      </div>
+
+      <!-- Text Case Converter Tool -->
+      <div class="tool-card" data-tool="text-case-converter">
+        <div class="tool-icon">💰</div>
+        <h3 class="tool-title">Compound Interest</h3>
+        <p class="tool-description">
+          Calculate compound interest easily with support for principal, rate, time, frequency, and total value. Perfect for financial planning.
+        </p>
+        <div class="tool-features">
+          <span class="feature-tag">Quick</span>
+          <span class="feature-tag">Simple</span>
+          <span class="feature-tag">Browser-Based</span>
+        </div>
+        <div class="tool-actions">
+          <button class="btn btn-primary" onclick="openTool('Compound-interest-calculator')">
+            Open Tool
+          </button>
+          <button class="btn btn-outline" onclick="openTool('Compound-interest-calculator', true)">
+            New Tab
+          </button>
+        </div>
+      </div>
+
+      <!-- QR Code Generator Tool -->
+      <div class="tool-card" data-tool="qr-code-generator">
+        <div class="tool-icon">📱</div>
+        <h3 class="tool-title">QR Code Generator</h3>
+        <p class="tool-description">
+          Generate QR codes for URLs, text, or contact info instantly and download them.
+        </p>
+        <div class="tool-features">
+          <span class="feature-tag">Instant</span>
+          <span class="feature-tag">Downloadable</span>
+          <span class="feature-tag">Multi-format</span>
+        </div>
+        <div class="tool-actions">
+          <button class="btn btn-primary" onclick="openTool('qr-code-generator')">
+            Open Tool
+          </button>
+          <button class="btn btn-outline" onclick="openTool('qr-code-generator', true)">
+            New Tab
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">About ToolsHub</h2>
+            <p>
+              ToolsHub is a collection of carefully crafted web tools designed
+              to boost your productivity. Each tool is built with modern web
+              technologies, ensuring fast performance and a seamless user
+              experience.
+            </p>
+            <p>
+              Our mission is to provide simple, powerful tools that work right
+              in your browser without any downloads or installations. All tools
+              are free to use and respect your privacy.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-number">6+</div>
+                <div class="stat-label">Tools Available</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Free to Use</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Data Stored</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="about-graphic">
+              <div class="graphic-circle"></div>
+              <div class="graphic-square"></div>
+              <div class="graphic-triangle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <span class="logo-icon">🛠️</span>
+              <span class="logo-text">ToolsHub</span>
+            </div>
+            <p class="footer-description">
+              Your ultimate digital toolkit for enhanced productivity.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#tools">Tools</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Tools</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="password-generator/index.html">Password Generator</a>
+              </li>
+              <li><a href="calculator/index.html">Calculator</a></li>
+              <li>
+                <a href="temperature-converter/index.html"
+                  >Temperature Converter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 ToolsHub. Made with ❤️ for productivity enthusiasts.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

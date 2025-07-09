@@ -1,0 +1,106 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, hsl(304, 52%, 75%), hsl(230, 60%, 54%));
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Back Button */
+.back-btn-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #fff;
+  color: #333;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+/* Calculator Container */
+#calculator {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Display */
+#display {
+  width: 100%;
+  height: 80px;
+  padding: 15px;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #2e2e2e;
+  color: white;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+/* Key Grid */
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Buttons */
+button {
+  height: 60px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Operators */
+.operator-btn {
+  background-color: orange;
+}
+
+.operator-btn:hover {
+  background-color: #ffb347;
+}
+
+.operator-btn:active {
+  background-color: #ffd696;
+}

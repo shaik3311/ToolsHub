@@ -11,7 +11,7 @@ function toggleMenu(){
 }
 
 function openTool(toolName, newTab = false) {
-  const url = `../../tools/${toolName}/index.html`;
+  const url = `shaik3311.gtihub.io/tools/${toolName}/index.html`;
   
   if (newTab) {
     window.open(url, '_blank'); // open in new tab
